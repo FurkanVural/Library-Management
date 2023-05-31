@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{nodata.title}">No data at database!</title>
+</head>
+<body>
+<p >Looks like there isn't any book in our database.</p>
+<form action="/add-book" method="get">
+    <button type="submit" >Let's add a new one</button>
+</form>
+<p><a href="?language=tr">Türkçe</a> | <a href="?language=en">English</a> </p>
+
+</body>
+</html>
